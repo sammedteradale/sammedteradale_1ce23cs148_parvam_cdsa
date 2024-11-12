@@ -11,11 +11,22 @@ int main(){
             scanf("%d",&a[i][j]);
         }
     }
-    for(int i=0;i<r;i++){
+        for(int i=0;i<r;i++){
         for(int j=0;j<c;j++){
-            printf("%d ",a[i][j]);
+            printf("%d ",a[j][i]);
         }
         printf("\n");
+        }
+        
+         
+    for(int i=0;i<r;i++){
+        for(int j=0;j<c;j++){
+            if(i==j){
+            printf("%d ",a[j][i]);
+            printf("the diagonal element is %d",a[i][j]);
+        }
+        }
     }
+    
     return 0;
 }
